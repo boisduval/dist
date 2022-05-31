@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>新会陈皮</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="lib/swiper-bundle.min.css">
+  <script src="lib/swiper-bundle.min.js"> </script>
+  <script src="lib/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<header class="header home">
+  <div class="header-title">中国·新会陈皮</div>
+  <div class="nav-list">
+    <nav class="nav active">首页</nav>
+    <nav class="nav">公示公告</nav>
+    <nav class="nav">办事流程</nav>
+    <nav class="nav">主体一览</nav>
+    <nav class="nav">资质授信</nav>
+    <nav class="nav">红黑榜</nav>
+    <nav class="nav">防伪查询</nav>
+  </div>
+</header>
+
+<div class="breadcrumb"></div>
+
+<article class="home">
+  <section class="home-search">
+    <div class="home-search-title"></div>
+    <div class="home-search-input">
+      <label>
+        <input type="text"></label>
+      <div class="home-search-button">
+        查 询
+      </div>
+    </div>
+  </section>
+  <section class="home-overview">
+    <div class="home-title">
+      <div class="section-title">资讯汇总</div>
+      <div class="section-sub-title">Information aggregation</div>
+    </div>
+
+    <div class="home-overview-main">
+      <!--      导航-->
+      <div class="nav-list-overview">
+        <nav class="overview active">最新通知</nav>
+        <nav class="overview">产业动态</nav>
+        <nav class="overview">陈皮大讲堂</nav>
+        <nav class="overview">资料下载</nav>
+      </div>
+
+      <div class="overview-border"></div>
+      <!--      文章-->
+      <div class="overview-article">
+        <h2>江门新会大红柑正式采摘！新会陈…</h2>
+        <div class="overview-article-content">&emsp;&emsp;11月18日，江门新会区庆祝2021年中国农民丰收节暨新会大红柑采摘活动在新会柑之林梅江种植示范基地成功举办，为新会柑种质资源中心今年刚采收的道地新会柑皮举行封箱仪式。目前，新会全区种植新会柑约10万亩，形成药、食、茶、健和文旅、金融等6大类35细类100余品种的系…</div>
+        <div class="overview-go"></div>
+      </div>
+      <!--列表-->
+      <div class="overview-list">
+      </div>
+    </div>
+
+  </section>
+  <section class="home-r-b">
+    <div class="section-title">红黑榜</div>
+    <div class="section-sub-title">Red and Black List</div>
+    <div class="r-b-tabs">
+      <div class="r-b-tab active">红榜</div>
+      <div class="r-b-tab">黄榜</div>
+      <div class="r-b-tab">黑榜</div>
+      <div class="r-b-tab">更多</div>
+    </div>
+    <div class="r-b-list"></div>
+  </section>
+  <section class="home-farmer">
+    <div class="img"></div>
+    <div class="home-farmer-list">
+      <div class="home-farmer-title home-title">
+        <div class="section-title" style="color: #fff">农户风采</div>
+        <div class="section-sub-title">Farmer style</div>
+      </div>
+      <div class="home-farmer-list-box">
+
+      </div>
+    </div>
+  </section>
+  <section class="home-story clearfix">
+    <div class="home-title">
+      <div class="section-title">企业故事</div>
+      <div class="section-sub-title">Corporate story</div>
+    </div>
+    <div class="home-story-content">
+      <div class="home-story-orange"></div>
+      <div class="home-story-swiper-box">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="home-story-article">
+        <div class="title"></div>
+        <div class="content"></div>
+      </div>
+      <a class="home-story-more">查看更多>></a>
+    </div>
+
+  </section>
+  <section class="home-company">
+    <div class="title-box">
+      <div class="title">品牌企业</div>
+      <div class="sub-title">Brand enterprise</div>
+    </div>
+    <img class="img" src="images/pic_1.png" alt="">
+    <img class="img" src="images/pic_2.png" alt="">
+    <img class="img" src="images/pic_3.png" alt="">
+    <img class="img" src="images/pic_4.png" alt="">
+  </section>
+</article>
+
+<article class="gggs">
+</article>
+
+<article class="bslc">
+</article>
+
+<article class="ztyl">
+</article>
+
+<article class="zzsx">
+</article>
+
+<article class="hhb">
+</article>
+
+<article class="fwcx">
+</article>
+
+<footer>
+  <span>江门市新会区学农会版权所有</span>
+  <span style="margin-left: 56px">广ICP备20227832号</span>
+</footer>
+</body>
+<script type="application/javascript" src="js/home.js"></script>
+<script type="application/javascript">
+$(document).ready(function () {
+  $("header nav").click(function (e) {
+    handleNav(e)
+  });
+
+  //  查询
+  handleSearch()
+
+  handleZX()
+
+  ZXList()
+
+  redBlack()
+
+  handleRedBlack()
+
+  farmerList()
+
+  storyList()
+});
+
+//  导航
+const handleNav = function (e) {
+  const name = e.target.innerText
+  //  先隐藏全部内容
+  $('article').hide()
+  //  nav选中样式
+  $('nav').removeClass('active')
+  $(e.target).addClass('active')
+  //  移除home类
+  $('header').removeClass('home')
+
+  switch (name) {
+    case '首页':
+      //  首页头部有些区别，添加home类
+      $('header').addClass('home')
+      //  隐藏面包屑
+      $('.breadcrumb').hide()
+      //  显示首页内容
+      $('article.home').show()
+      break
+    case '公示公告':
+      $('article.gggs').show()
+      break
+    case '办事流程':
+      $('article.bslc').show()
+      break
+    case '主体一览':
+      $('article.ztyl').show()
+      break
+    case '资质授信':
+      $('article.zzsx').show()
+      break
+    case '红黑榜':
+      $('article.hhb').show()
+      break
+    case '防伪查询':
+      $('article.fwcx').show()
+      break
+  }
+}
+
+
+</script>
+</html>
