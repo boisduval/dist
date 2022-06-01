@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>新会陈皮</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/breadcrumb.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/antiFake.css" />
+    <link rel="stylesheet" href="../lib/swiper-bundle.min.css" />
+    <script src="../lib/swiper-bundle.min.js"></script>
+    <script src="../lib/jquery-2.1.1.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-title">中国·新会陈皮</div>
+      <div class="nav-list">
+        <nav class="nav">
+          <a href="index.html">首页</a>
+        </nav>
+        <nav class="nav active">
+          <a href="">公示公告</a>
+        </nav>
+        <nav class="nav">
+          <a href="">办事流程</a>
+        </nav>
+        <nav class="nav">
+          <a href="">主体一览</a>
+        </nav>
+        <nav class="nav">
+          <a href="">资质授信</a>
+        </nav>
+        <nav class="nav">
+          <a href="">红黑榜</a>
+        </nav>
+        <nav class="nav">
+          <a href="">防伪查询</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="breadcrumb">
+      <span>当前位置：</span>
+      <a href="./index.html" class="breadcrumb-item">首页</a>
+      <span>/</span>
+      <a href="./antiFake.html" class="breadcrumb-item active">防伪查询</a>
+    </div>
+    <article class="anti-fake">
+      <section class="search">
+        <div class="search-tip">
+          <div class="search-icon"></div>
+          <div class="tip-text">刮开陈皮包装上防伪标志的防伪码</div>
+          <div class="tip-text">在右侧查询模块输入防伪码查询</div>
+        </div>
+        <div class="search-box">
+          <div class="section-title">防伪查询</div>
+          <div class="section-sub-title">Security Check</div>
+          <div class="search-input">
+            <label
+              ><input type="text" placeholder="请输入11位防伪验证码"
+            /></label>
+            <div class="search-button">查 询</div>
+          </div>
+          <div class="tip">注：也可使用手机扫描防伪标志二维码进行查询</div>
+        </div>
+      </section>
+      <section class="symbol clearfix">
+        <div class="home-title">
+          <div class="section-title">防伪标识</div>
+          <div class="section-sub-title">
+            Anti-counterfeiting identification
+          </div>
+        </div>
+        <div class="home-story-content">
+          <div class="home-story-orange"></div>
+          <div class="home-story-swiper-box">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="../static/fake_swiper_1.png"
+                    alt=""
+                    style="width: 342px; height: 171px"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="../static/fake_swiper_2.png"
+                    alt=""
+                    style="width: 128px; height: 255px"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="home-story-article">
+            <div class="title">认准此标识，防伪有保障</div>
+            <div class="content">
+              新会陈皮防伪证明标识共分为横版和竖版两种，标识由新会陈皮品牌logo，防伪涂层、生产年份，标识规格，标识序列码、防伪查询二维码等内容组成，可通过扫码录入标识防伪码，查询产品真伪以及产品追溯信息。
+              为了保障消费者的权益，请在购买新会陈皮时，务必检查陈皮外包装上是否张贴防伪标识。如未张贴，则该陈皮非新会陈皮。
+            </div>
+          </div>
+          <!--          <a class="home-story-more">查看更多>></a>-->
+        </div>
+      </section>
+    </article>
+  </body>
+  <script type="application/javascript">
+    $(document).ready(function () {
+      let swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    });
+  </script>
+</html>

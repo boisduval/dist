@@ -1,0 +1,214 @@
+.anti-fake {
+}
+
+.anti-fake .search {
+  margin-top: 39px;
+  position: relative;
+  padding-left: 535px;
+  background: #fff;
+  width: 100%;
+  height: 236px;
+}
+
+.anti-fake .search-tip {
+  width: 231px;
+  height: 281px;
+  background: linear-gradient(315deg, #f79621 0%, #f0580b 100%);
+  position: absolute;
+  left: 190px;
+  top: -17px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+.anti-fake .search-tip::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -14px;
+  width: 0;
+  height: 0;
+  border-bottom: 17px solid #7a4724;
+  border-right: 14px solid transparent;
+}
+
+.anti-fake .search-tip .search-icon {
+  width: 53px;
+  height: 53px;
+  background: url("../images/search.png") center / 100% no-repeat;
+  margin: 53px auto 36px;
+}
+
+.anti-fake .search-tip .tip-text {
+  margin-top: 17px;
+}
+
+.anti-fake .search-box {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 39px;
+}
+
+.anti-fake .search-box .section-sub-title {
+  margin-top: 11px;
+  margin-bottom: 34px;
+}
+
+.anti-fake .search-box .search-input input {
+  width: 400px;
+  background: transparent;
+  color: #5d493b;
+}
+
+.anti-fake .search-box .tip {
+  font-size: 11px;
+  margin-top: 17px;
+}
+
+.anti-fake .symbol {
+  margin-top: 78px;
+}
+
+.anti-fake.error .search-tip .search-icon {
+  background: url("../images/error.png") center / 100% no-repeat;
+}
+
+.anti-fake.error {
+  height: 500px;
+}
+
+.anti-fake.error .search-tip {
+}
+
+.anti-fake.checked .search-tip .search-icon {
+  background: url("../images/checked.png") center / 100% no-repeat;
+}
+
+.anti-fake.checked .search-again {
+  width: 133px;
+  height: 36px;
+  line-height: 36px;
+  background: #ffffff;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  color: #ff791b;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 20px auto 0;
+}
+
+.anti-fake.checked .info-box {
+  display: flex;
+}
+
+.anti-fake.checked .info-item {
+  margin-top: 28px;
+}
+
+.anti-fake.checked .info-item .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.anti-fake.checked .info-item .section-sub-title {
+  margin-bottom: 39px;
+  position: relative;
+}
+
+.anti-fake.checked .info-item .section-sub-title::after {
+  content: "";
+  width: 45px;
+  height: 6px;
+  background: #ff791b;
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+}
+
+.anti-fake.checked .info-item .row {
+  font-size: 11px;
+  margin-top: 11px;
+}
+
+.anti-fake.checked .info-item .row .label {
+  margin-right: 16px;
+  color: #afa59e;
+}
+
+.anti-fake.checked .divider-col {
+  width: 1px;
+  height: 169px;
+  background: #e6e3e2;
+  margin: 34px 84px 0;
+}
+
+.anti-fake.checked .honor {
+  margin-top: 78px;
+}
+
+.anti-fake .honor-card {
+  width: 458px;
+  height: 300px;
+  background: #ffffff;
+  box-shadow: 0 7px 21px 0 rgba(226, 229, 230, 1);
+  padding: 22px;
+}
+
+.anti-fake .honor-card img {
+  width: 413px;
+  height: 194px;
+  object-fit: fill;
+}
+
+.anti-fake .honor-card .description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+
+.anti-fake .location {
+  margin-top: 56px;
+  display: flex;
+  height: 429px;
+  background: #fff;
+}
+
+.anti-fake .location #map {
+  width: 726px;
+}
+
+.anti-fake .location .location-info {
+  flex: 1;
+}
+
+.anti-fake.checked .location-info.info-item {
+  margin-top: 0;
+}
+
+.anti-fake .location .location-info .title-box {
+  padding-top: 45px;
+  padding-left: 56px;
+}
+
+.anti-fake .location .location-info .address {
+  background: #f7f7f7;
+  padding: 28px 0 28px 56px;
+}
+
+.anti-fake .qrcode-box {
+  padding-top: 28px;
+  padding-left: 56px;
+  font-size: 14px;
+  color: #5d493b;
+}
+
+.anti-fake .qrcode-box img {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  margin-top: 20px;
+}
